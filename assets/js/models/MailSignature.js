@@ -1,0 +1,1 @@
+var MailSignature = Backbone.Model.extend({});
