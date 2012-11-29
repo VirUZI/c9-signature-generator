@@ -3,11 +3,23 @@ c9-signature-generation
 
 A simple afternoon hack to help you generate your very own c9 signature.
 
-See live demo @ http://little-giants.github.com/c9-signature-generator/
+See live version @ http://little-giants.github.com/c9-signature-generator/
 
 ## Installation
 
   $ git clone https://github.com/little-giants/c9-signature-generator.git
+
+## Deployment
+
+So you found a bug or want to improve the code? Oh, goodie! We <3 contributions!
+Here's the low down on how to contribute.
+
+Do your development in the main branch, check-in your changes.
+Merge the changes with the gh-pages branch and push to github.
+
+Voila! 
+
+Changes will now be available @ http://little-giants.github.com/c9-signature-generator/
 
 ## Dependencies
 
