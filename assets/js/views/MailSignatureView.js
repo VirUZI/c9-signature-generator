@@ -15,10 +15,10 @@ var MailSignatureView = Backbone.View.extend({
   render: function() {
 
     var model = new MailSignature({
-      name: this.$el.find("#name").val(),
-      title: this.$el.find("#title").val(),
-      phone: this.$el.find("#phone").val(),
-      email: this.$el.find("#email").val()
+      name: this.$el.find("#name").val() || "För- och efternamn",
+      title: this.$el.find("#title").val() || "Titel",
+      phone: this.$el.find("#phone").val() || "Telefonnummer (direkt)",
+      email: this.$el.find("#email").val() || "E-postadress"
     });
 
     $(this.el).find('.output').html(this.template(model.toJSON()));
