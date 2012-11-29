@@ -21,7 +21,7 @@ var MailSignatureView = Backbone.View.extend({
       email: this.$el.find("#email").val() || "E-postadress"
     });
 
-    $(this.el).find('.output').html(this.template(model.toJSON()));
+    $(this.el).find('div.output').html(this.template(model.toJSON()));
 
     return this;
   }
