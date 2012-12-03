@@ -78,29 +78,53 @@
     <script src="assets/js/app.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="text/template" id="MailSignatureTemplate">
-      <div style="width:800px;height:250px;border-top:1px solid #000">
-                                   <div style="width:70%;float:left;height:300px;">
-                                   
-                                     <p><span style="font-family:Arial, Helvetica, sans-serif;font-size:14px"><strong style="color: #007AC9">{{name}}</strong> <strong style="color: #000000">| {{title}}</strong></span><br /><br />
-                                       <span style="font-family:Arial, Helvetica, sans-serif;font-size:12px"> 
-                                       {{email}}@cloudnine.se <br />
-                                       Tel: +46 8 - 120 330 00<br />
-                                       Dir: {{phone}}<br /><br />
-
-                                                                               <a href="http://cloudnine.se" title="cloudnine.se" style="color: #000000; text-decoration: underline; border-bottom: 1px #000000;font-weight:normal">www.cloudnine.se</a></strong><br />
-                                        <a href="http://www.linkedin.com/company/cloud-nine?trk=hb_tab_compy_id_30566" title="linkedin.com" style="color: #000000; text-decoration: underline; border-bottom: 1px #000000;font-weight:normal">LinkedIn</a></strong><br />
-                                        <a href="https://www.facebook.com/cloudninestockholm" title="facebook.com" style="color: #000000; text-decoration: underline; border-bottom: 1px #000000;font-weight:normal">Facebook</a></strong><br />
-                                        <a href="https://twitter.com/c9stockholm" title="twitter.com" style="color: #000000; text-decoration: underline; border-bottom: 1px #000000;font-weight:normal">Twitter</a></strong><br />
-                                        <a href="http://blogg.cloudnine.se/" title="blogg.cloudnine.se/" style="color: #000000; text-decoration: underline; border-bottom: 1px #000000;font-weight:normal">Blogg</a></strong><br /> 
-                                       <br />
-                                         <strong>Linn&#233;gatan 89 E<br />Box 10304<br />100 55 Stockholm <br />Sweden<br /><br />
-  
-                                     <b>P</b> Please consider the environment before printing this e-mail</span></p>
-      </div>
-                                   <div style="width:30%;float:left;height:300px;position:relative;"><img src="https://www.basefarm.com/Global/Partners/basefarm-cloud-nine-logo.jpg" style="position:absolute;bottom:95px;right:0"></div>
-      </div>
-      <br />
-
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="border-top:1px solid #000">
+        <tr>
+          <td bgcolor="#ffffff" width="70%">
+            <span style="font-family:Arial, Helvetica, sans-serif;font-size:14px">
+              <strong style="color: #007AC9">{{name}}</strong> 
+              <strong style="color: #000000">| {{title}}</strong>
+            </span>
+            <br />
+            <br />
+            <span style="font-family:Arial, Helvetica, sans-serif;font-size:12px;"> 
+              {{email}}@cloudnine.se
+              <br /> 
+              Tel: +46 8 - 120 330 00
+              <br /> 
+              Dir: {{phone}}
+              <br />
+              <br /> 
+              <a href="http://cloudnine.se" title="cloudnine.se" style="color: #000000; text-decoration: underline; border-bottom: 1px #000000;font-weight:normal">www.cloudnine.se</a>
+              <br /> 
+              <a href="http://www.linkedin.com/company/cloud-nine?trk=hb_tab_compy_id_30566" title="linkedin.com" style="color: #000000; text-decoration: underline; border-bottom: 1px #000000;font-weight:normal">LinkedIn</a>
+              <br /> 
+              <a href="https://www.facebook.com/cloudninestockholm" title="facebook.com" style="color: #000000; text-decoration: underline; border-bottom: 1px #000000;font-weight:normal">Facebook</a>
+              <br /> 
+              <a href="https://twitter.com/c9stockholm" title="twitter.com" style="color: #000000; text-decoration: underline; border-bottom: 1px #000000;font-weight:normal">Twitter</a>
+              <br /> 
+              <a href="http://blogg.cloudnine.se/" title="blogg.cloudnine.se/" style="color: #000000; text-decoration: underline; border-bottom: 1px #000000;font-weight:normal">Blogg</a>
+              <br /> 
+              <br />
+              <strong>
+                Linn&#233;gatan 89 E
+                <br /> 
+                Box 10304
+                <br /> 
+                100 55 Stockholm
+                <br /> 
+                Sweden
+                <br />
+                <br />
+                Please consider the environment before printing this e-mail
+              </strong>
+            </span>
+          </td>
+          <td bgcolor="#ffffff" width="30%" valign="bottom" align="right">
+            <img src="https://www.basefarm.com/Global/Partners/basefarm-cloud-nine-logo.jpg" width="120" height="80" />
+          </td>
+        </tr>
+      </table>
     </script>
 
   </body>
