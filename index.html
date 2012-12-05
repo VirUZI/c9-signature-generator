@@ -16,6 +16,7 @@
       }
     </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -57,9 +58,8 @@
                
               <div class="input-prepend"><span class="add-on"><i class="icon-book"></i></span><input type="text" id="phone" name="phone" placeholder="Telefonnummer (direkt)"></div>
 
-              <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span><input type="text" id="email" name="email" placeholder="E-postadress"></div>
             </div>
-            <div class="output"></div>   
+            <textarea class="output" rows="8"></textarea>   
           
           </div> <!-- /container -->
 
@@ -77,59 +77,12 @@
     <script src="assets/js/routers/AppRouter.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/main.js"></script>
-    <script type="text/template" id="MailSignatureTemplate">
-      <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="border-top:1px solid #000">
-        <tr>
-          <td bgcolor="#ffffff" width="70%">
-            <br />
-            <span style="font-family:Arial, Helvetica, sans-serif;font-size:14px">
-              <strong style="color: #007AC9">{{name}}</strong> 
-              <strong style="color: #000000">| {{title}}</strong>
-            </span>
-            <br />
-            <br />
-            <span style="font-family:Arial, Helvetica, sans-serif;font-size:12px;"> 
-              {{email}}@cloudnine.se
-              <br /> 
-              Tel: +46 8 - 120 330 00
-              <br /> 
-              Dir: {{phone}}
-              <br />
-              <br /> 
-              <a href="http://cloudnine.se" title="cloudnine.se" style="color: #000000; text-decoration: underline; border-bottom: 1px #000000;font-weight:normal">www.cloudnine.se</a>
-              <br /> 
-              <a href="http://www.linkedin.com/company/cloud-nine?trk=hb_tab_compy_id_30566" title="linkedin.com" style="color: #000000; text-decoration: underline; border-bottom: 1px #000000;font-weight:normal">LinkedIn</a>
-              <br /> 
-              <a href="https://www.facebook.com/cloudninestockholm" title="facebook.com" style="color: #000000; text-decoration: underline; border-bottom: 1px #000000;font-weight:normal">Facebook</a>
-              <br /> 
-              <a href="https://twitter.com/c9stockholm" title="twitter.com" style="color: #000000; text-decoration: underline; border-bottom: 1px #000000;font-weight:normal">Twitter</a>
-              <br /> 
-              <a href="http://blogg.cloudnine.se/" title="blogg.cloudnine.se/" style="color: #000000; text-decoration: underline; border-bottom: 1px #000000;font-weight:normal">Blogg</a>
-              <br /> 
-              <br />
-              <strong>
-                <a href="http://goo.gl/maps/cQrsy" title="Hitta hit" style="color: #000000; text-decoration: underline; border-bottom: 1px #000000;font-weight:normal">
-                  Linn&#233;gatan 89 E
-                  <br /> 
-                  Box 10304
-                  <br /> 
-                  100 55 Stockholm
-                  <br /> 
-                  Sweden
-                </a>
-                <br />
-                <br />
-                Please consider the environment before printing this e-mail
-              </strong>
+    <script type="text/template" id="MailSignatureTemplate">{{name}}
+{{title}}      
+Cloud Nine - http://www.cloudnine.se
 
-            </span>
-          </td>
-          <td bgcolor="#ffffff" width="30%" valign="bottom" align="right" style="font-weight: bold; font-size: 22px;">
-            <img src="http://www.cloudnine.se/Global/cloud-nine-mail-signature-logo.jpg" width="120" height="80" />
-          </td>
-        </tr>
-      </table>
-    </script>
+Tel: +46 8 - 120 330 00
+Dir: +46 {{[phone]}}</script>
 
   </body>
 </html>
