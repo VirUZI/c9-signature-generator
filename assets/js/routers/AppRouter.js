@@ -6,8 +6,17 @@ var AppRouter = Backbone.Router.extend({
   index: function() {
     var mailSignatureView = new MailSignatureView({
       el: $("#mail-signature-generator"),
-      template: $('#MailSignatureTemplate').html()
+      template: $('#MailSignatureTemplate1').html(),
+      output: $('#output1')
     });
     mailSignatureView.render();
+
+    var mailSignatureView2 = new MailSignatureView({
+      el: $("#mail-signature-generator"),
+      template: $('#MailSignatureTemplate2').html(),
+      output: $('#output2')
+    });
+    mailSignatureView2.render();
+
   }
 });

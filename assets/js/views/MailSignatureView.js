@@ -4,7 +4,8 @@ var MailSignatureView = Backbone.View.extend({
   initialize: function(options) {
     var self = this;
     this.template = Handlebars.compile(options.template || "");
-    
+    this.$output = options.output;
+
     this.on("keyup", this.render);
 
     this.$el.find("input").keyup(function() {
@@ -17,11 +18,15 @@ var MailSignatureView = Backbone.View.extend({
     var model = new MailSignature({
       name: this.$el.find("#name").val() || "För- och efternamn",
       title: this.$el.find("#title").val() || "Titel",
-      phone: this.$el.find("#phone").val() || "Telefonnummer (direkt)",
-      email: this.$el.find("#email").val() || "E-postadress"
+      phone: this.$el.find("#phone").val() || "Telefonnummer (direkt)"
     });
 
-    $(this.el).find('textarea.output').val(this.template(model.toJSON()));
+    this.$output.html(this.template(model.toJSON()));
+
+
+    var rows = this.$output.val().split('\n').length;
+    this.$output.attr("rows", rows);
+
 
     return this;
   }
