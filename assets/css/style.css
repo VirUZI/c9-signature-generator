@@ -1,4 +1,28 @@
-.output {
-  font-family: Arial;
+body {
+	padding-top: 60px;
 }
 
+.output {
+	color: #006699;
+	font-size: 0.8em;
+	font-family: Arial;
+}
+
+.output .title {
+ 	font-weight: bold;
+}
+
+.output .section {
+	margin-top:10px;
+	line-height: 12px;
+}
+
+.output em {
+	color: #FF6600;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.output em.spaced {
+	margin-left: 20px;
+}

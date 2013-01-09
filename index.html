@@ -2,19 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+
     <title>C9 Signature Generator</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-    <!-- omfg omfg... i know... -->
-    <style>
-      body {
-        padding-top: 60px; 
-      }
-    </style>
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -22,7 +18,6 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
   </head>
 
   <body>
@@ -46,11 +41,10 @@
               <div class="input-prepend"><span class="add-on"><i class="icon-briefcase"></i></span><input type="text" id="title" name="title"placeholder="Titel"></div>
                
               <div class="input-prepend"><span class="add-on"><i class="icon-book"></i></span><input type="text" id="phone" name="phone" placeholder="Telefonnummer (direkt)"></div>
-
             </div>
           </div>
 
-        </div>    
+        </div>
         <div class="span6">
 
             <div class="alert alert-info">
@@ -68,25 +62,11 @@
 
       <div class="row ">
         <div class="span6">
-
-
             <div>
-              <h2>New email</h2>
               <div id='output1' class="output"></div>   
             </div>
-          
-        </div>    
-        <div class="span6">
-
-            <div>
-              <h2>Reply to email</h2>
-              <div id='output2' class="output"></div>   
-            </div>
-       
         </div>
-
       </div>
-
     </div>
 
 
@@ -100,27 +80,26 @@
     <script src="assets/js/routers/AppRouter.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/main.js"></script>
-    <script type="text/template" id="MailSignatureTemplate1">{{name}} | {{title}} <br/>
-Cloud Nine<br/>
-<br/>
-Tel: +46 8 - 120 330 00<br/>
-Dir: +46 {{phone}}<br/>
-Web: http://www.cloudnine.se<br/>
-<br/>
-Linnégatan 89 E<br/>
-Box 10304<br/>
-100 55 Stockholm<br/>
-Sweden<br/>
-<br/>
-Please consider the environment before printing this e-mail</script>
-    <script type="text/template" id="MailSignatureTemplate2">{{name}} | {{title}}<br/>
-Cloud Nine<br/>
-<br/>
-Tel: +46 8 - 120 330 00 <br/>
-Dir: +46 {{phone}}<br/>
-Web: http://www.cloudnine.se<br/>
-<br/>
-Please consider the environment before printing this e-mail</script>
- 
+
+    <script type="text/javascript">
+      Handlebars.registerHelper('firstname', function(name) {
+        return name.split(" ")[0];
+      });
+      Handlebars.registerHelper('lastname', function(name) {
+        return name.split(" ")[1];
+      });
+    </script>
+
+    <script type="text/template" id="MailSignatureTemplate1">
+    <div class="title">{{name}} <em>|</em> {{title}}</div>
+    <div class="section">
+      <div>Linnégatan 89 E<em>,</em> Box 10304<em>,</em> 100 55 Stockholm<em>,</em> Sweden</div>
+      <div><em>T</em> +468 120 330 64 <em class="spaced">M</em> +46 {{phone}}</div>
+      <div>{{firstname name}}.{{lastname name}}@cloudnine.se <em>|</em> www.cloudnine.se</div>
+    </div>
+    <div class="section">
+      Ledande inom digital kommunikation
+    </div>
+
   </body>
 </html>
