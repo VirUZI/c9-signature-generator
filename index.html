@@ -82,11 +82,8 @@
     <script src="assets/js/main.js"></script>
 
     <script type="text/javascript">
-      Handlebars.registerHelper('firstname', function(name) {
-        return name.split(" ")[0];
-      });
-      Handlebars.registerHelper('lastname', function(name) {
-        return name.split(" ")[1];
+      Handlebars.registerHelper('email', function(name) {
+        return name.replace(/ /g, ".").toLowerCase();
       });
     </script>
 
@@ -95,7 +92,7 @@
     <div class="section">
       <div>Linnégatan 89 E<em>,</em> Box 10304<em>,</em> 100 55 Stockholm<em>,</em> Sweden</div>
       <div><em>T</em> +468 120 330 64 <em class="spaced">M</em> +46 {{phone}}</div>
-      <div>{{firstname name}}.{{lastname name}}@cloudnine.se <em>|</em> www.cloudnine.se</div>
+      <div>{{email name}}@cloudnine.se <em>|</em> www.cloudnine.se</div>
     </div>
     <div class="section">
       Ledande inom digital kommunikation
