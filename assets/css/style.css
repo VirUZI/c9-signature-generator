@@ -2,7 +2,11 @@ body {
 	padding-top: 60px;
 }
 
-.output {
+a {
+	text-decoration: none;
+}
+
+.output, a {
 	color: #073951;
 	font-size: 0.85em;
 	font-family: Arial;
@@ -12,8 +16,11 @@ body {
  	font-weight: bold;
 }
 
+.output .spacer {
+	height:10px;
+}
+
 .output .section {
-	margin-top:10px;
 	line-height: 1.1em;
 }
 
@@ -25,4 +32,8 @@ body {
 
 .output em.spaced {
 	margin-left: 0.9em;
+}
+
+.output .logo {
+	font-weight: bold;
 }
