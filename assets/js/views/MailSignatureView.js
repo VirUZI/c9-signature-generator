@@ -18,7 +18,8 @@ var MailSignatureView = Backbone.View.extend({
     var model = new MailSignature({
       name: this.$el.find("#name").val() || "För- och efternamn",
       title: this.$el.find("#title").val() || "Titel",
-      phone: this.$el.find("#phone").val() || "Telefonnummer (direkt)"
+      direct: this.$el.find("#direct").val() || "8 120 330 00",
+      mobile: this.$el.find("#mobile").val() || "Telefonnummer (mobil)"
     });
 
     this.$output.html(this.template(model.toJSON()));
