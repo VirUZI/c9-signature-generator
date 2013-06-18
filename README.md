@@ -3,11 +3,11 @@ c9-signature-generation
 
 A simple afternoon hack to help you generate your very own c9 signature.
 
-See live version @ http://little-giants.github.com/c9-signature-generator/
+See live version @ http://cloud-nine.github.io/c9-signature-generator
 
 ## Installation
 
-  $ git clone https://github.com/little-giants/c9-signature-generator.git
+  $ git clone git@github.com:Cloud-Nine/c9-signature-generator.git
 
 ## Deployment
 
@@ -19,7 +19,7 @@ Merge the changes with the gh-pages branch and push to github.
 
 Voila! 
 
-Changes will now be available @ http://little-giants.github.com/c9-signature-generator/
+Changes will now be available @ http://cloud-nine.github.io/c9-signature-generator
 
 ## Dependencies
 
