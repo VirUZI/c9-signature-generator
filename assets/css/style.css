@@ -1,0 +1,40 @@
+body {
+	padding-top: 60px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.output {
+	color: #002035;
+	font-size: 0.8em;
+	font-family: Arial;
+}
+
+.output .title {
+ 	font-weight: bold;
+}
+
+.output .spacer {
+	height:0.5em;
+}
+
+.output .section {
+	line-height: 1.4em;
+}
+
+.output em {
+	color: #007AC9;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.output .em_space {
+	display: inline-block;
+	width: 0.9em;
+}
+
+.output .logo {
+	font-weight: bold;
+}
